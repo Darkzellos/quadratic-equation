@@ -8,11 +8,13 @@ def quadratic():
 	discriminant = (pow(int(b), 2))-(4*int(a)*int(c))
 	if discriminant == 0:
 		x = -int(b) / 2*int(a)
+		print("D=" + b + "^2" + "-4*" + a + "*" + c + "=" + str(discriminant))
 		print("X = " + str(x))
 	if discriminant < 0:
 		print("D<0 - кореней нет")
 	if discriminant > 0:
 		x1 = (-int(b) + np.sqrt(int(discriminant))) / (2 * int(a))
 		x2 = (-int(b) - np.sqrt(int(discriminant))) / (2 * int(a))
+		print("D=" + b + "^2" + "-4*" + a + "*" + c + "=" + str(discriminant))
 		print("X1 = " + str(x1) + " X2 = " + str(x2))
 quadratic()
